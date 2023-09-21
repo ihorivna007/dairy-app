@@ -38,10 +38,10 @@ export const App = () => {
       : itemsList1,
   );
   const [currentId, setCurrentId] = useState(
-    itemsList.filter(item => item.isSelected)[0].id || 0,
+    itemsList.filter(item => item.isSelected)[0]?.id || 0,
   );
   const [currentComments, setCurrentComments] = useState(
-    itemsList.filter(item => item.id === currentId)[0].comments || [],
+    itemsList.filter(item => item.id === currentId)[0]?.comments || [],
   );
 
   const [newItem, setNewItem] = useState('');
