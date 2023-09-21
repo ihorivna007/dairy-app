@@ -1,0 +1,36 @@
+.item {
+  position: relative;
+  background-color: $white;
+
+  &--active {
+    border-left: 4px solid deeppink;
+  }
+
+  &__amount {
+    position: absolute;
+    right: 110px;
+    background-color: $azure;
+    border-color: $azure;
+    color: $white;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem;
+  }
+
+  &__button {
+    @include custom-button;
+
+    color: $red;
+    background-color: transparent;
+    border-color: $red;
+
+    &:hover {
+      color: $white;
+      background-color: $red;
+    }
+  }
+}
