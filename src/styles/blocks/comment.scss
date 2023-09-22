@@ -1,0 +1,22 @@
+.comment {
+  background-color: $white;
+  width: 480px;
+  height: 50px;
+  display: flex;
+  margin: 10px 0;
+  box-sizing: border-box;
+  background-clip: border-box;
+  border-radius: .25rem;
+
+  &__color {
+    width: 50px;
+    height: 100%;
+    background-color: $dark-blue;
+  }
+
+  &__text {
+    padding-left: 10px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 87.5%;
+  }
+}
